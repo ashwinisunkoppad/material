@@ -1,0 +1,21 @@
+<div class='image'></div>
+<mat-sidenav-container class="example-container" >
+
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened"
+               (closed)="events.push('close!')">
+    Sidenav content<br><br>
+    <a [routerLink]="['/case1']" routerLinkActive="router-link-active">TABLE 1</a><br><br>
+
+    <a routerLink="/case2" routerLinkActive="router-link-active" >TABLE 2</a><br><br>
+
+    <a routerLink="/case3" routerLinkActive="router-link-active" >TABLE 3</a><br><br>
+
+    <!-- <a >TABLE 4</a> -->
+  </mat-sidenav>&nbsp;&nbsp;
+
+  <mat-sidenav-content>
+    <p><mat-checkbox [(ngModel)]="opened">Click on Checkbox to open Sidebar</mat-checkbox></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

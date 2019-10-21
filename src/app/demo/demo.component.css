@@ -1,0 +1,22 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:  0;
+
+}
+.mat-drawer-inner-container {
+  width: 190px;
+}
+.image{
+  background-image:url("src/assets/nature.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-position: 50% 40%;
+  opacity: 6;
+  z-index: -1;
+  }
